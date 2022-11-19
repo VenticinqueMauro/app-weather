@@ -7,7 +7,6 @@ export const InputSearch = ({setcity}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setcity(inputRef.current.value.toLowerCase())
-        console.log(inputRef.current.value)
     }
 
     return (

@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import { API_KEY, LANG_ES, UNITS_METRIC, URL_BASE } from "../api/api"
+import { API_KEY, LANG_ES, UNITS_METRIC, URL_BASE, WEATHER } from "../api/api"
 import { Description } from "./Description"
 import { InputSearch } from "./InputSearch"
 import { Loader } from "./Loader"
@@ -15,7 +15,7 @@ export const Weather = () => {
 
 
     const callApi = async (ciudad) => {
-        await axios.get(`${URL_BASE}${ciudad}&appid=${API_KEY}${UNITS_METRIC}${LANG_ES}`).then(r => {
+        await axios.get(`${URL_BASE}${WEATHER}${ciudad}&appid=${API_KEY}${UNITS_METRIC}${LANG_ES}`).then(r => {
             setweather(r.data)
             setIsLoading(false)
         })
@@ -31,14 +31,14 @@ export const Weather = () => {
 
 
     return (
-        <div className="max-w-2xl mx-auto p-4 mt-20">
+        <div className="max-w-2xl mx-auto p-4 pt-5">
             {/* <h1 className="text-center m-2">Weather App</h1> */}
             <img className="mx-auto" src={logo} alt='logo' width={250}/>
             <InputSearch setcity={setcity} />
             {
                 !isLoading && city !== ''
                 ?
-                <Description weather={weather} />
+                <Description weather={weather} city={city} />
                 :
                 <Loader />
             }

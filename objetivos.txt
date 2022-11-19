@@ -1,3 +1,5 @@
+Mostrar alerta al no encontrar una ciudad
+Hacer responsive la app - EN PROCESO 
 Mostrar dia y hora segun ubicacion / pais.
-Mostrar clima por horario (definir 3 o 4 horarios)
-Mostrar prediccion del clima en los siguientes 3 a 5 dias.
+Mostrar clima por horario (definir 3 o 4 horarios) 
+Mostrar prediccion del clima en los siguientes 3 a 5 dias-CUMPLIDO

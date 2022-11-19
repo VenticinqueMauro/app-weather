@@ -3,10 +3,10 @@ import React from 'react'
 export const ForecastItem = ({hora, icon, temp}) => {
     return (
         <div>
-            <p>{hora}hs</p>
+            <p className='text-[#0099ff]'>{hora}hs</p>
             <div className='flex items-center justify-center'>
                 <img src={icon} alt='iconForecast' />
-                <b className='text-lg'>{temp} °C</b>
+                <b className='text-lg text-amber-400'>{temp} °C</b>
             </div>
         </div>
     )

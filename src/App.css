@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
 body {
-    background: #212121;
+    font-family: 'Russo One', sans-serif;
+
+    background: #0f0f0f;
     color: white;
 }
-
 
 .boxes {
     --size: 32px;
@@ -50,7 +54,7 @@ body {
 }
 
 .boxes .box>div {
-    --background: #5C8DF6;
+    --background: #0099ff;
     --top: auto;
     --right: auto;
     --bottom: auto;
@@ -195,3 +199,4 @@ body {
         transform: translate(100%, 100%);
     }
 }
+

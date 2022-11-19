@@ -24,14 +24,14 @@ export const Description = ({ weather, city, lat, lon}) => {
             <hr className='w-20 mx-auto border-stone-600 m-3' />
             <h3 className='text-stone-600'>Actual</h3>
             <div className='flex justify-evenly items-center mt-4'>
-                <div className='text-center'>
+                <div className='text-center '>
                     <p className='text-5xl lg:text-6xl font-semibold text-amber-400'>{weather && weather.main.temp.toFixed()} °C</p>
                     <div className='flex justify-center items-center'>
                         <img className='' src={iconURL} alt='ClimaIcon' width={50} />
-                        <h3 className='capitalize'>{weather.weather[0].description}</h3>
+                        <h3 className='capitalize text-sm lg:text-base'>{weather.weather[0].description}</h3>
                     </div>
                 </div>
-                <div className='text-sm lg:text-base text-start '>
+                <div className='text-xs lg:text-base text-start '>
                     <p>ST {weather && weather.main.feels_like.toFixed(1)}°C</p>
                     <p>Viento: {weather && weather.wind.speed} km/h</p>
                     <p>Humedad: {weather && weather.main.humidity}%</p>

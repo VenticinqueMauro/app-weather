@@ -37,7 +37,7 @@ export const Description = ({ weather, city }) => {
                 </div>
                 <div className='text-sm lg:text-base text-start'>
                     <p><b>ST</b> {weather && weather.main.feels_like.toFixed(1)}°C</p>
-                    <p><b>Viento:</b> {weather && weather.wind.speed} m/s</p>
+                    <p><b>Viento:</b> {weather && weather.wind.speed} km/h</p>
                     <p><b>Humedad:</b> {weather && weather.main.humidity}%</p>
                     <p><b>Presión: </b>{weather && weather.main.pressure} hPa</p>
                 </div>

@@ -31,7 +31,7 @@ export const Weather = () => {
 
 
     return (
-        <div className="max-w-2xl mx-auto p-4 pt-5">
+        <div className="max-w-2xl mx-auto">
             {/* <h1 className="text-center m-2">Weather App</h1> */}
             <img className="mx-auto" src={logo} alt='logo' width={250}/>
             <InputSearch setcity={setcity} />

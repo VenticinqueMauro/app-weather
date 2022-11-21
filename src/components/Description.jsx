@@ -17,7 +17,7 @@ export const Description = ({ weather, city, lat, lon}) => {
     }, [weather])
 
     return (
-        <div className='text-center animate__animated animate__zoomIn'>
+        <div className='text-center animate__animated animate__fadeIn'>
             <h2 className='text-lg  text-center ' > {weather && weather.name
             } / {weather && weather.sys.country}</h2>
             {/* <h3 className='text-lg text-center'><span className='capitalize'>{date && date}</span>hs</h3> */}
